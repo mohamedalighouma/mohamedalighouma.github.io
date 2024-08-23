@@ -1,6 +1,6 @@
 ---
-layout: default
-title: "Curriculum Vitae"
+#layout: default
+title: "Mohamed Ali GHOUMA"
 ---
 
 <div class="animate__animated animate__fadeInDown">
