@@ -2,6 +2,7 @@ markdown: kramdown
 theme: jekyll-theme-cayman
 include:
   - style.css
+  - script.js  
 title: "Mohamed Ali Ghouma - DevOps Cloud SRE Senior"
 description: "Curriculum Vitae of Mohamed Ali Ghouma"
 theme: jekyll-theme-cayman
@@ -10,5 +11,6 @@ theme: jekyll-theme-cayman
 author:
   name: "Mohamed Ali Ghouma"
   email: "ghouma.mohamed.ali@gmail.com"
+  LinkedIn: [Mohamed Ali Ghouma](https://www.linkedin.com/in/mohamed-ali-g/)
 
 # Social media links (if any)
