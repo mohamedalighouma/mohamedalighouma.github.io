@@ -1,47 +1,17 @@
-# Site settings
+---
 title: Mohamed Ali Ghouma - CV
-email: ghouma.mohamed.ali@gmail.com
-description: A professional CV for Mohamed Ali Ghouma, Senior DevOps Engineer.
-baseurl: "" # the base URL for your site, e.g., "/my-project"
-url: "https://mohamedalighouma.github.io" # the URL of your site
+layout: default
+---
 
-# Build settings
-markdown: kramdown
-theme: jekyll-theme-cayman
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+# Mohamed Ali GHOUMA
+**Ingénieur DevOps Cloud SRE Senior**  
+**Contact:**  
+Phone: +33 0758151884  
+Email: [ghouma.mohamed.ali@gmail.com](mailto:ghouma.mohamed.ali@gmail.com)  
+LinkedIn: [Mohamed Ali Ghouma](https://www.linkedin.com/in/mohamed-ali-g/)
 
-# Optional settings
-paginate: 5
-paginate_path: "/page:num/"
-logo: "/assets/images/logo.png"
-favicon: "/assets/images/favicon.ico"
+---
 
-# Permalinks configuration
-permalink: pretty
+## Compétences Techniques
 
-# Include files configuration
-include:
-  - _pages
-
-# Exclude files or directories from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - README.md
-
-# Markdown processor configuration
-markdown: kramdown
-kramdown:
-  input: GFM
-
-# SEO and social
-twitter_username: your_twitter_handle
-github_username: your_github_handle
-
-# Author
-author:
-  name: Mohamed Ali Ghouma
-  bio: Senior DevOps Engineer
+<!-- Rest of your content -->
