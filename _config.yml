@@ -17,5 +17,5 @@ paginate: 5
 paginate_path: "/page:num/"
 
 #logo
-logo: /assets/images/logo.png
+logo: logo.png
 
