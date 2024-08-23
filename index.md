@@ -1,92 +1,93 @@
----
-layout: default
-title: "Curriculum Vitae"
----
-
 # Mohamed Ali GHOUMA
 **Ingénieur DevOps Cloud SRE Senior**  
 **Contact:**  
 Phone: +33 0758151884  
-Email: ghouma.mohamed.ali@gmail.com  
+Email: [ghouma.mohamed.ali@gmail.com](mailto:ghouma.mohamed.ali@gmail.com)  
+LinkedIn: [Mohamed Ali Ghouma](https://www.linkedin.com/in/mohamed-ali-g/)
 
 ---
 
 ## Compétences Techniques
 
-- **CI/CD**: Jenkins, CodeBuild, CodeDeploy, CodePipeline
-- **Containerisation**: Kubernetes, Docker, Docker Stack, Docker Swarm, Docker Compose, Helm
-- **GitOps**: ArgoCD, Argo Rollouts
-- **IaC (Infrastructure as Code)**: Ansible, Terraform, CloudFormation, CDK
-- **Bases de données**: MySQL, MongoDB, Redis, PostgreSQL, Oracle, RDS, DynamoDB, SQL Server
-- **Gestion des logs**: EFK (Elasticsearch, Fluentd, Kibana)
-- **Surveillance**: Prometheus, Grafana
-- **Serveurs web**: Nginx, IIS, Tomcat
-- **Systèmes d’exploitation**: Linux (Debian, CentOS, Fedora), Windows (Windows Server 2012, 2019)
-- **Cloud**: On-Premise, AWS, OVH
-- **QA**: SonarQube, JMeter, Selenium WebDriver, JUnit tests
-- **Programmation**: C/C++/C#, Java, Python, PHP
-- **Scripting**: Bash, Shell, PowerShell, Python
-- **SCM**: GitLab, GitHub, GitCommit
-- **Web**: Angular, React, Spring Boot, .NET Core, .NET Framework
+<div class="skills reveal">
+  <div class="skill-item">CI/CD: Jenkins, CodeBuild, CodeDeploy, Codepipeline</div>
+  <div class="skill-item">Containerisation: Kubernetes, Docker, Docker Stack, Docker Swarm, Docker Compose, Helm</div>
+  <div class="skill-item">GitOps: ArgoCD, Argo Rollouts</div>
+  <div class="skill-item">IaC: Ansible, Terraform, CloudFormation, CDK</div>
+  <div class="skill-item">Bases de données: MySQL, MongoDB, Redis, PostgreSQL, Oracle, RDS, DynamoDB, SQL Server</div>
+  <div class="skill-item">Gestion des logs: EFK</div>
+  <div class="skill-item">Surveillance: Prometheus, Grafana</div>
+  <div class="skill-item">Serveurs web: Nginx, IIS, Tomcat</div>
+  <div class="skill-item">Systèmes d’exploitation: Linux, Windows</div>
+  <div class="skill-item">Cloud: AWS, OVH</div>
+  <div class="skill-item">QA: SonarQube, JMeter, Selenium, JUnit</div>
+  <div class="skill-item">Programmation: C/C++/C#, Java, Python, PHP</div>
+  <div class="skill-item">Scripting: Bash, Shell, PowerShell, Python</div>
+  <div class="skill-item">SCM: GitLab, GitHub</div>
+  <div class="skill-item">Web: Angular, React, Spring Boot, .NET Core, .NET Framework</div>
+</div>
 
 ## Compétences Fonctionnelles
 
-- Développement et maintenance des applications
-- Contribution à la création de l’architecture des projets
-- Analyse et évaluation des exigences des clients
-- Participation à la gestion de projet via la méthodologie SCRUM
+<div class="reveal">
+  - Développement et maintenance des applications
+  - Contribution à l’architecture des projets
+  - Analyse et évaluation des exigences des clients
+  - Gestion de projet avec méthodologie SCRUM
+</div>
 
 ## Langues
 
-- **Français**: Bilingue
-- **Anglais**: Professionnel
-
----
+<div class="reveal">
+  - Français : Bilingue
+  - Anglais : Professionnel
+</div>
 
 ## Expériences Professionnelles
 
-### Ingénieur DevOps - Capgemini, Bordeaux, France (Juillet 2023 – Aujourd'hui)
-**Objectif**: Amélioration de l'infrastructure DevOps existante.  
-**Réalisations**:
-- Conteneurisation avec Docker et développement de scripts shell, améliorant l’efficacité des processus de développement.
-- Conception et déploiement d’infrastructures cloud résilientes en utilisant CloudFormation et CDK, avec une programmation avancée en Python.
-- Amélioration des pipelines CI/CD existantes.
+### Ingénieur DevOps, Capgemini - Bordeaux, France
+*Juillet 2023 – Aujourd'hui*
 
-**Technologies**: AWS CodeCommit, CodeDeploy, CodePipeline, CodeArtefacts, CodeBuild, AWS CloudFormation, AWS CDK, Python, Shell, Docker, Scrum.
+<div class="reveal">
+  - Amélioration de l'infrastructure DevOps existante.
+  - Conteneurisation avec Docker et développement de scripts shell.
+  - Conception et déploiement d’infrastructures cloud résilientes avec CloudFormation et CDK.
+  - Amélioration des pipelines CI/CD existantes.
+</div>
 
-### Ingénieur DevOps - Opencell via Focus France, France (Février 2022 – Juin 2023)
-**Objectif**: Amélioration de l'infrastructure DevOps existante.  
-**Réalisations**:
-- Automatisation des processus de déploiement et de tests, renforçant l'efficacité et la fiabilité des cycles de développement.
-- Mise en place et gestion de la surveillance des systèmes avec Prometheus, visualisation avancée des données avec Grafana.
-- Orchestration des déploiements avec Helm Charts, optimisant la gestion et la mise à l'échelle des applications.
+### Ingénieur DevOps, Opencell via Focus France - France
+*Février 2022 – Juin 2023*
 
-**Technologies**: Maven, Java, MySQL, Redis, Helm Charts, Docker, Prometheus, Grafana, Jenkins, AWS, OVH.
+<div class="reveal">
+  - Automatisation des processus de déploiement et de tests.
+  - Mise en place de la surveillance avec Prometheus et Grafana.
+  - Orchestration des déploiements avec Helm Charts.
+  - Déploiement d'applications avec Kubernetes et Helm Charts.
+</div>
 
-### Ingénieur DevOps - Focus International, Tunis, Tunisie (Janvier 2020 – Juin 2023)
-**Objectif**: Mise en place complète de l'infrastructure DevOps et création de l’architecture.  
-**Réalisations**:
-- Automatisation des processus de déploiement et de tests, renforçant l'efficacité des cycles de développement.
-- Conception et mise en œuvre de stratégies de déploiements automatisés avec Kubernetes et GitOps.
-- Mise en place de CI/CD pour quatre environnements avec Jenkins.
-- Création et gestion de clusters Docker Swarm et Kubernetes avec Ansible.
+### Ingénieur DevOps, Focus International - Tunis, Tunisie
+*Janvier 2020 – Juin 2023*
 
-**Technologies**: Maven, MsBuild, NPM, .NET Core, .NET Framework, Spring Boot, Angular, Kubernetes, Docker Swarm, Ansible, Jenkins, SonarQube.
+<div class="reveal">
+  - Automatisation des processus de déploiement et de tests.
+  - Conception et mise en œuvre de stratégies de déploiement avec Kubernetes et GitOps.
+  - Gestion des configurations avec Ansible.
+  - Création et gestion de clusters Docker Swarm et Kubernetes.
+</div>
 
-### Ingénieur DevOps - Linedata, Tunis, Tunisie (Février 2018 – Décembre 2019)
-**Objectif**: Mise en place complète de l'infrastructure DevOps depuis la base.  
-**Réalisations**:
-- Automatisation des processus de déploiement et de tests.
-- Surveillance en temps réel des applications.
-- Mise en œuvre de solutions de dockerisation.
+### Ingénieur DevOps, Linedata - Tunis, Tunisie
+*Février 2018 – Décembre 2019*
 
-**Technologies**: SonarQube, Jmeter, Selenium WebDriver, JUnit, Grafana, Prometheus, Docker, Jenkins, Elasticsearch, Kibana.
-
----
+<div class="reveal">
+  - Automatisation des processus de déploiement et de tests.
+  - Mise en œuvre de solutions de dockerisation.
+  - Surveillance des applications avec EFK stack.
+</div>
 
 ## Formation
 
-- **Diplôme d'Ingénieur en Informatique** - École Nationale d'Ingénieurs de Carthage (ENICarthage), Ariana, Tunisie (2016 – 2019)
-- **Cycle Préparatoire en Sciences d’Ingénieur** - Institut Préparatoire aux Études d’Ingénieurs de Nabeul (IPEIN), Nabeul, Tunisie (2014 – 2016)
-- **Baccalauréat en Sciences Expérimentales** - Lycée Technique de Zarzis, Zarzis, Tunisie (2014)  
-- Mention Bien, Moyenne générale : 16/20
+<div class="reveal">
+  - Diplôme d'Ingénieur en Informatique, École Nationale d'Ingénieurs de Carthage (2016 – 2019)
+  - Cycle Préparatoire en Sciences d’Ingénieur, Institut Préparatoire aux Études d’Ingénieurs de Nabeul (2014 – 2016)
+  - Baccalauréat en Sciences Expérimentales, Lycée Technique de Zarzis (2014)
+</div>
