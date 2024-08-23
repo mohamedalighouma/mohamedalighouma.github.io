@@ -7,3 +7,11 @@ theme: jekyll-theme-cayman
 author:
   name: "Mohamed Ali Ghouma"
   email: "ghouma.mohamed.ali@gmail.com"
+
+# Plugins for Jekyll
+plugins:
+  - jekyll-paginate
+
+# Pagination settings
+paginate: 5
+paginate_path: "/page:num/"
