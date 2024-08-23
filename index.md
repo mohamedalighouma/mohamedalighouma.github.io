@@ -1,4 +1,5 @@
-itle: "Mohamed Ali Ghouma - DevOps Cloud SRE Senior"
+---
+title: "Mohamed Ali Ghouma - DevOps Cloud SRE Senior"
 author: "Mohamed Ali Ghouma"
 email: "ghouma.mohamed.ali@gmail.com"
 phone: "+33 0758151884"
