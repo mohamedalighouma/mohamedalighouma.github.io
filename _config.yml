@@ -1,10 +1,9 @@
-title: "Mohamed Ali Ghouma - DevOps Cloud SRE Senior"
-description: "Mohamed Ali Ghouma"
+# Site settings
+title: "Mohamed Ali Ghouma"
+description: "Curriculum Vitae of Mohamed Ali Ghouma"
 theme: jekyll-theme-cayman
 
 # Optional settings for SEO and social sharing
 author:
   name: "Mohamed Ali Ghouma"
   email: "ghouma.mohamed.ali@gmail.com"
-
-# Social media links (if any)
