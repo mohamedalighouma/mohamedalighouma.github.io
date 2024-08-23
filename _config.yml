@@ -1,3 +1,7 @@
+markdown: kramdown
+theme: jekyll-theme-cayman
+include:
+  - style.css
 title: "Mohamed Ali Ghouma - DevOps Cloud SRE Senior"
 description: "Curriculum Vitae of Mohamed Ali Ghouma"
 theme: jekyll-theme-cayman
