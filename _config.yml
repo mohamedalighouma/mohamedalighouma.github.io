@@ -1,17 +1,11 @@
----
-title: Mohamed Ali Ghouma - CV
-layout: default
----
+title: "Mohamed Ali Ghouma - DevOps Cloud SRE Senior"
+description: "Mohamed Ali Ghouma"
+theme: jekyll-theme-cayman
 
-# Mohamed Ali GHOUMA
-**Ingénieur DevOps Cloud SRE Senior**  
-**Contact:**  
-Phone: +33 0758151884  
-Email: [ghouma.mohamed.ali@gmail.com](mailto:ghouma.mohamed.ali@gmail.com)  
-LinkedIn: [Mohamed Ali Ghouma](https://www.linkedin.com/in/mohamed-ali-g/)
+# Optional settings for SEO and social sharing
+author:
+  name: "Mohamed Ali Ghouma"
+  email: "ghouma.mohamed.ali@gmail.com"
+  LinkedIn: [Mohamed Ali Ghouma](https://www.linkedin.com/in/mohamed-ali-g/)
 
----
-
-## Compétences Techniques
-
-<!-- Rest of your content -->
+# Social media links (if any)
