@@ -115,14 +115,18 @@
             <h1>Mohamed Ali Ghouma</h1>
             <p>DevOps Engineer & Cloud Enthusiast</p>
             <div class="social-icons">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mohamed-ali-g/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/mohamedalighouma" target="_blank"><i class="fab fa-github"></i></a>
             </div>
             <div class="buttons">
                 <a href="documents/CV" download class="button">Download CV</a>
-                <a href="mailto:youremail@example.com" class="button">Email Me</a>
-                <a href="https://www.upwork.com/freelancer/your-upwork-profile" target="_blank" class="button">Upwork Profile</a>
-                <a href="https://www.credly.com/users/your-credly-profile" target="_blank" class="button">Credly Profile</a>
+                <a href="mailto:ghouma.mohamed.ali@gmail.com" class="button">Email Me</a>
+                <a href="https://www.upwork.com/freelancers/~01c6b5a3a3a4d4e6da" target="_blank" class="button">Upwork Profile</a>
+                <a href="https://www.credly.com/users/mohamed-ali-ghouma/edit" target="_blank" class="button">Credly Profile</a>
+            </div>
+            <div class="buttons">
+                <a href="https://medium.com/@ghouma.mohamed.ali" target="_blank" class="button">Medium Page</a>
+                <a href="https://wa.me/33758151884" target="_blank" class="button">WhatsApp Me</a>
             </div>
         </div>
     </div>
