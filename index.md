@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         /* General Styles */
         body {
@@ -140,6 +139,35 @@
             width: 100%;
         }
 
+        /* Contact Form */
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact-form input, #contact-form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #contact-form button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #contact-form button:hover {
+            background-color: #00bcd4;
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -231,9 +259,12 @@
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Feel free to reach out for collaborations or just a friendly chat.</p>
-        <p>Email: <a href="mailto:ghouma.mohamed.ali@gmail.com">ghouma.mohamed.ali@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-alighouma">Mohamed Ali Ghouma</a></p>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <footer>
