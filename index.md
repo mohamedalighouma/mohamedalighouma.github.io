@@ -179,24 +179,12 @@
 </head>
 <body>
     <div class="background-gif">
-        <iframe src="https://giphy.com/embed/OK5LK5zLFfdm" width="100%" height="100%" style="position: absolute; top: 0; left: 0; z-index: -1;" frameborder="0" class="giphy-embed" allowfullscreen></iframe>
+        <iframe src="https://giphy.com/embed/OK5LK5zLFfdm" width="100%" height="100%" style="position: absolute; top: 0; left: 0; z-index: -1;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
     </div>
+    
 
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="Logo of Mohamed Ali Ghouma">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    
+    </div>
 
     <section id="about">
         <h2>À propos de moi</h2>
