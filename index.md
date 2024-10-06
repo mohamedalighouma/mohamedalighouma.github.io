@@ -33,7 +33,7 @@
             background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Network_Animation_Example.gif/800px-Network_Animation_Example.gif') no-repeat center;
             background-size: cover;
             z-index: 0;
-            opacity: 0.2;
+            opacity: 0.5;
         }
 
         .content {
