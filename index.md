@@ -119,7 +119,7 @@
                 <a href="#"><i class="fab fa-github"></i></a>
             </div>
             <div class="buttons">
-                <a href="path/to/your/cv.pdf" download class="button">Download CV</a>
+                <a href="documents/CV" download class="button">Download CV</a>
                 <a href="mailto:youremail@example.com" class="button">Email Me</a>
                 <a href="https://www.upwork.com/freelancer/your-upwork-profile" target="_blank" class="button">Upwork Profile</a>
                 <a href="https://www.credly.com/users/your-credly-profile" target="_blank" class="button">Credly Profile</a>
