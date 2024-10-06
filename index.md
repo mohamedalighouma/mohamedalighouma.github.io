@@ -8,7 +8,7 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: #f39c12;
             color: white;
             overflow: hidden;
@@ -37,64 +37,81 @@
         .content {
             position: relative;
             z-index: 1;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
         }
 
         .avatar {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            border: 3px solid white;
+            border: 5px solid #ffffff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
         }
 
         h1 {
             margin-top: 20px;
             font-size: 3rem;
             font-family: 'Brush Script MT', cursive;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             margin-bottom: 20px;
+            font-weight: 300;
         }
 
         .social-icons {
             display: flex;
             gap: 20px;
+            margin-bottom: 20px;
         }
 
         .social-icons a {
             color: white;
             text-decoration: none;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            transition: transform 0.3s;
         }
-            .buttons {
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        .buttons {
             margin-top: 20px;
             display: flex;
             gap: 15px;
         }
 
         .button {
-            padding: 10px 20px;
+            padding: 12px 25px;
             background-color: #ffffff;
             color: #f39c12;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
+            border-radius: 30px;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
         .button:hover {
             background-color: #f39c12;
             color: #ffffff;
+            transform: translateY(-3px);
         }
-</style>
+
+    </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
         <div class="background-animation" id="background-animation"></div>
         <div class="content">
-            <img src="path/to/your/photo.jpg" alt="Avatar" class="avatar">
+            <img src="photos/photo.jpg" alt="Avatar" class="avatar">
             <h1>Mohamed Ali Ghouma</h1>
             <p>DevOps Engineer & Cloud Enthusiast</p>
             <div class="social-icons">
