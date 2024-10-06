@@ -1,21 +1,21 @@
 # Site settings
-title: "Mohamed Ali Ghouma"
-description: "Curriculum Vitae of Mohamed Ali Ghouma"
-theme: jekyll-theme-cayman
+#title: "Mohamed Ali Ghouma"
+#description: "Curriculum Vitae of Mohamed Ali Ghouma"
+#theme: jekyll-theme-cayman
 
 # Optional settings for SEO and social sharing
-author:
-  name: "Mohamed Ali Ghouma"
-  email: "ghouma.mohamed.ali@gmail.com"
+#author:
+#  name: "Mohamed Ali Ghouma"
+#  email: "ghouma.mohamed.ali@gmail.com"
 
 # Plugins for Jekyll
-plugins:
-  - jekyll-paginate
+#plugins:
+#  - jekyll-paginate
 
 # Pagination settings
-paginate: 5
-paginate_path: "/page:num/"
+#paginate: 5
+#paginate_path: "/page:num/"
 
 #logo
-logo: logo.png
+#logo: logo.png
 
