@@ -110,6 +110,56 @@
             margin-bottom: 10px;
             color: #00bcd4;
         }
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+            list-style: none;
+        }
+        .timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: #00bcd4;
+        }
+        .timeline-item {
+            margin: 20px 0;
+            padding-left: 50%;
+            position: relative;
+        }
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 20px;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background: #00bcd4;
+            border-radius: 50%;
+        }
+        .timeline-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            max-width: 450px;
+            text-align: left;
+        }
+        .timeline-content h3 {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .timeline-content h4 {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #777;
+        }
         .portfolio {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -178,12 +228,30 @@
     </style>
 </head>
 <body>
-    <div class="background-gif">
-        <iframe src="https://giphy.com/embed/OK5LK5zLFfdm" width="100%" height="100%" style="position: absolute; top: 0; left: 0; z-index: -1;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-    </div>
-    
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/assets/images/logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    
+    <div class="hero">
+        <h1>Mohamed Ali Ghouma</h1>
+        <p>Senior DevOps Cloud SRE Engineer</p>
+        <div class="social-icons">
+            <a href="https://github.com/mohamedalighouma"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mohamed-alighouma"><i class="fab fa-linkedin"></i></a>
+        </div>
     </div>
 
     <section id="about">
@@ -210,6 +278,33 @@
                 <p>Proactive and reactive skills in managing production incidents and maintaining continuity.</p>
             </div>
         </div>
+    </section>
+
+    <section id="experience">
+        <h2>Expérience</h2>
+        <ul class="timeline">
+            <li class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Ingénieur DevOps</h3>
+                    <h4>Capgemini, Juillet 2023 - Juillet 2024</h4>
+                    <p>Amélioration de l'infrastructure DevOps existante, conteneurisation avec Docker, développement de scripts Shell, et conception de cloud infrastructure résiliente via AWS.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Ingénieur DevOps</h3>
+                    <h4>Focus International, Janvier 2019 - Juin 2023</h4>
+                    <p>Mise en place de l'infrastructure DevOps complète pour le département web, orchestration avec Kubernetes, et intégration continue avec Jenkins.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Ingénieur DevOps</h3>
+                    <h4>Linedata, Février 2018 - Décembre 2019</h4>
+                    <p>Responsable de l'automatisation des processus de déploiement, conteneurisation des systèmes avec Docker, et surveillance proactive des systèmes avec Grafana.</p>
+                </div>
+            </li>
+        </ul>
     </section>
 
     <section id="portfolio">
