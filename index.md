@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,236 +8,303 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
-        /* General Styles */
         body {
             font-family: 'Poppins', sans-serif;
             line-height: 1.6;
-            background-color: #f4f4f4;
+            background-color: #f5f5f5;
+            color: #333;
             margin: 0;
             padding: 0;
         }
-
         header {
             position: fixed;
             top: 0;
             width: 100%;
-            background-color: #333;
-            color: #fff;
+            background: #fff;
+            padding: 20px;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
-            z-index: 1000;
         }
-
         .logo img {
-            width: 50px;
+            width: 60px;
         }
-
         nav ul {
             list-style: none;
             display: flex;
+            gap: 20px;
         }
-
         nav ul li {
-            margin-left: 20px;
+            margin: 0;
         }
-
         nav ul a {
+            color: #333;
             text-decoration: none;
-            color: #fff;
+            font-weight: bold;
             transition: color 0.3s;
         }
-
         nav ul a:hover {
             color: #00bcd4;
         }
-
-        /* Hero Section */
         .hero {
             height: 100vh;
             background: url('/assets/images/hero-bg.jpg') no-repeat center center/cover;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
+            flex-direction: column;
             text-align: center;
+            color: #fff;
         }
-
         .hero h1 {
-            font-size: 3rem;
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
         }
-
         .hero p {
             font-size: 1.5rem;
-            margin-top: 10px;
+            margin-bottom: 20px;
         }
-
-        .hero .social-icons a {
+        .social-icons a {
             margin: 0 15px;
-            font-size: 1.5rem;
-            color: white;
+            color: #fff;
+            font-size: 2rem;
             transition: color 0.3s;
         }
-
-        .hero .social-icons a:hover {
+        .social-icons a:hover {
             color: #00bcd4;
         }
-
-        /* Section Styles */
         section {
-            padding: 60px 20px;
-            max-width: 1100px;
+            padding: 80px 20px;
+            max-width: 1200px;
             margin: 0 auto;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
         }
-
-        /* Skill Cards */
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #00bcd4;
+            text-align: center;
+        }
         .skills {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
-            margin-top: 20px;
-        }
-
-        .skill-card {
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-
-        .skill-card h3 {
-            margin-top: 10px;
-            font-size: 1.2rem;
+        .skill-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
         }
-
-        /* Portfolio Section */
+        .skill-card:hover {
+            transform: translateY(-10px);
+        }
+        .skill-card i {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #00bcd4;
+        }
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+            list-style: none;
+        }
+        .timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: #00bcd4;
+        }
+        .timeline-item {
+            margin: 20px 0;
+            padding-left: 50%;
+            position: relative;
+        }
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 20px;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background: #00bcd4;
+            border-radius: 50%;
+        }
+        .timeline-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            max-width: 450px;
+            text-align: left;
+        }
+        .timeline-content h3 {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .timeline-content h4 {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #777;
+        }
         .portfolio {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
         }
-
         .portfolio-item {
             background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
             overflow: hidden;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
         .portfolio-item:hover {
             transform: translateY(-10px);
         }
-
         .portfolio-item img {
             width: 100%;
+            display: block;
         }
-
-        /* Contact Form */
+        .portfolio-item h3 {
+            padding: 10px;
+            color: #333;
+        }
         #contact-form {
             display: flex;
             flex-direction: column;
             max-width: 600px;
             margin: 0 auto;
+            gap: 15px;
         }
-
         #contact-form input, #contact-form textarea {
             padding: 10px;
-            margin: 10px 0;
             border-radius: 5px;
             border: 1px solid #ccc;
+            background: #fff;
+            color: #333;
         }
-
         #contact-form button {
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
+            padding: 15px;
             border: none;
-            border-radius: 5px;
+            background: #00bcd4;
+            color: #fff;
             cursor: pointer;
-            transition: background-color 0.3s;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
         }
-
         #contact-form button:hover {
-            background-color: #00bcd4;
+            background: #00a3c4;
         }
-
-        /* Footer */
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #333;
-            color: #fff;
+            background-color: #fff;
+            color: #333;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
         }
-
-        .social-media a {
+        .footer-icons a {
             margin: 0 10px;
-            color: #fff;
-            font-size: 1.5rem;
+            color: #333;
             transition: color 0.3s;
         }
-
-        .social-media a:hover {
+        .footer-icons a:hover {
             color: #00bcd4;
         }
     </style>
 </head>
-
 <body>
     <header>
-        <div class="logo animate__animated animate__bounceIn">
-            <img src="/assets/images/logo.png" alt="Logo">
+        <div class="header-container">
+            <div class="logo">
+                <img src="/assets/images/logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
     <div class="hero">
-        <div>
-            <h1>Mohamed Ali Ghouma</h1>
-            <p>Senior DevOps Cloud SRE Engineer</p>
-            <div class="social-icons">
-                <a href="https://github.com/mohamedalighouma"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/mohamed-alighouma"><i class="fab fa-linkedin"></i></a>
-            </div>
+        <h1>Mohamed Ali Ghouma</h1>
+        <p>Senior DevOps Cloud SRE Engineer</p>
+        <div class="social-icons">
+            <a href="https://github.com/mohamedalighouma"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mohamed-alighouma"><i class="fab fa-linkedin"></i></a>
         </div>
     </div>
 
     <section id="about">
         <h2>À propos de moi</h2>
-        <p>Ingénieur DevOps expert en automatisation, orchestration des conteneurs et intégration continue. Passionné par l'optimisation des processus de déploiement pour assurer des livraisons continues fluides et une disponibilité optimale des applications.</p>
+        <p>Ingénieur DevOps expert en automatisation, orchestration des conteneurs, et intégration continue. Passionné par l'optimisation des processus de déploiement pour assurer des livraisons continues fluides et une disponibilité optimale des applications.</p>
     </section>
 
     <section id="skills">
         <h2>Compétences</h2>
         <div class="skills">
             <div class="skill-card">
-                <i class="fas fa-cogs fa-3x"></i>
-                <h3>Automatisation Cloud</h3>
-                <p>Expert dans l'automatisation des infrastructures complexes en utilisant Kubernetes, Docker, et Ansible.</p>
+                <i class="fas fa-server"></i>
+                <h3>Cloud Automation</h3>
+                <p>Expert in automating complex infrastructure with Kubernetes, Docker, and Ansible.</p>
             </div>
             <div class="skill-card">
-                <i class="fas fa-sync-alt fa-3x"></i>
+                <i class="fas fa-sync-alt"></i>
                 <h3>CI/CD Pipelines</h3>
-                <p>Maîtrise de Jenkins, GitLab CI, et ArgoCD pour garantir une intégration et des déploiements continus.</p>
+                <p>Mastery in Jenkins, GitLab CI, and ArgoCD to ensure seamless integration and delivery.</p>
             </div>
             <div class="skill-card">
-                <i class="fas fa-tools fa-3x"></i>
-                <h3>Gestion des Incidents</h3>
-                <p>Proactif et réactif dans la gestion des incidents pour assurer la continuité des services essentiels.</p>
+                <i class="fas fa-tools"></i>
+                <h3>Incident Management</h3>
+                <p>Proactive and reactive skills in managing production incidents and maintaining continuity.</p>
             </div>
         </div>
+    </section>
+
+    <section id="experience">
+        <h2>Expérience</h2>
+        <ul class="timeline">
+            <li class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Ingénieur DevOps</h3>
+                    <h4>Capgemini, Juillet 2023 - Juillet 2024</h4>
+                    <p>Amélioration de l'infrastructure DevOps existante, conteneurisation avec Docker, développement de scripts Shell, et conception de cloud infrastructure résiliente via AWS.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Ingénieur DevOps</h3>
+                    <h4>Focus International, Janvier 2019 - Juin 2023</h4>
+                    <p>Mise en place de l'infrastructure DevOps complète pour le département web, orchestration avec Kubernetes, et intégration continue avec Jenkins.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Ingénieur DevOps</h3>
+                    <h4>Linedata, Février 2018 - Décembre 2019</h4>
+                    <p>Responsable de l'automatisation des processus de déploiement, conteneurisation des systèmes avec Docker, et surveillance proactive des systèmes avec Grafana.</p>
+                </div>
+            </li>
+        </ul>
     </section>
 
     <section id="portfolio">
@@ -246,12 +312,12 @@
         <div class="portfolio">
             <div class="portfolio-item">
                 <img src="/assets/images/project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
+                <h3>Project 1 Title</h3>
                 <p>Short description of the project. <a href="projects/project1.html">Learn more...</a></p>
             </div>
             <div class="portfolio-item">
                 <img src="/assets/images/project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
+                <h3>Project 2 Title</h3>
                 <p>Short description of the project. <a href="projects/project2.html">Learn more...</a></p>
             </div>
         </div>
@@ -268,12 +334,11 @@
     </section>
 
     <footer>
-        <div class="social-media">
+        <div class="footer-icons">
             <a href="https://github.com/mohamedalighouma"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/mohamed-alighouma"><i class="fab fa-linkedin"></i></a>
         </div>
         <p>&copy; 2024 Mohamed Ali Ghouma. All rights reserved.</p>
     </footer>
 </body>
-
 </html>
