@@ -30,8 +30,6 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('https://media.giphy.com/media/l0HlNQ03J5JxX6lva/giphy.gif') no-repeat center;
-            background-size: cover;
             z-index: 0;
             opacity: 0.3;
         }
@@ -69,13 +67,12 @@
             text-decoration: none;
             font-size: 2rem;
         }
-
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="header">
-        <div class="background-animation"></div>
+        <div class="background-animation" id="background-animation"></div>
         <div class="content">
             <img src="https://via.placeholder.com/150" alt="Avatar" class="avatar">
             <h1>Mohamed Ali Ghouma</h1>
@@ -86,5 +83,64 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const canvas = document.createElement('canvas');
+        document.getElementById('background-animation').appendChild(canvas);
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        let particles = [];
+
+        function Particle(x, y) {
+            this.x = x;
+            this.y = y;
+            this.vx = Math.random() * 2 - 1;
+            this.vy = Math.random() * 2 - 1;
+            this.radius = Math.random() * 3;
+        }
+
+        Particle.prototype.update = function() {
+            this.x += this.vx;
+            this.y += this.vy;
+
+            if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+            if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+        };
+
+        Particle.prototype.draw = function() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+            ctx.fill();
+        };
+
+        function createParticles() {
+            particles = [];
+            for (let i = 0; i < 100; i++) {
+                particles.push(new Particle(Math.random() * canvas.width, Math.random() * canvas.height));
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+            requestAnimationFrame(animate);
+        }
+
+        createParticles();
+        animate();
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            createParticles();
+        });
+    </script>
 </body>
 </html>
