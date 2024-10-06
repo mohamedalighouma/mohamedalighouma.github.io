@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="logo animate__animated animate__bounceIn">
-            <img src="images/logo.png" alt="Logo">
+            <img src="/assets/images/logo.png" alt="Logo">
         </div>
         <nav>
             <ul class="nav-links">
@@ -44,28 +44,68 @@
     <section id="highlights" class="animate__animated animate__fadeInLeft">
         <h2>Atouts</h2>
         <ul>
-            <li><strong>Maîtrise de l'Automatisation et de l'Orchestration Cloud</strong>: Expert dans l’automatisation d’infrastructures complexes...</li>
-            <li><strong>Optimisation et Fiabilité des Pipelines CI/CD</strong>: Spécialiste dans la mise en place, l’optimisation et la gestion des pipelines CI/CD...</li>
-            <li><strong>Résolution de Problèmes Complexes</strong>: Capacité à analyser et résoudre des problèmes techniques complexes...</li>
-            <li><strong>Réactivité et Gestion des Incidents en Production</strong>: Capacité éprouvée à intervenir rapidement lors d’incidents critiques...</li>
+            <li><strong>Maîtrise de l'Automatisation et de l'Orchestration Cloud</strong>: Expert dans l’automatisation d’infrastructures complexes, utilisant Kubernetes, Docker, GitOps, et Ansible pour garantir l'efficacité, la scalabilité et la haute disponibilité des environnements cloud.</li>
+            <li><strong>Optimisation et Fiabilité des Pipelines CI/CD</strong>: Spécialiste dans la mise en place, l’optimisation, et la gestion des pipelines CI/CD avec Jenkins, GitLab CI, et ArgoCD, garantissant une intégration continue fluide et des déploiements rapides.</li>
+            <li><strong>Résolution de Problèmes Complexes</strong>: Capacité à analyser et résoudre des problèmes techniques complexes de manière efficace et rapide, en utilisant des outils et des méthodes adaptés au métier d'Ingénieur DevOps.</li>
+            <li><strong>Réactivité et Gestion des Incidents en Production</strong>: Capacité éprouvée à intervenir rapidement lors d’incidents critiques, tout en assurant la continuité des services essentiels avec une approche méthodique et proactive.</li>
         </ul>
     </section>
     <hr>
 
     <section id="professional-experience" class="animate__animated animate__fadeInRight">
         <h2>Expériences Professionnelles</h2>
-        <!-- Professional experience articles here -->
+        <article>
+            <h3>Ingénieur DevOps - Capgemini, Bordeaux, France (Juillet 2023 – Juillet 2024)</h3>
+            <p><strong>Contexte et Objectifs</strong>: Optimisation de l’infrastructure DevOps pour Air France afin d’améliorer les processus de développement et de déploiement dans un environnement AWS.</p>
+            <p><strong>Réalisations Clés</strong>:</p>
+            <ul>
+                <li>Automatisation complète des pipelines CI/CD avec AWS CodePipeline et Jenkins, accélérant les cycles de livraison.</li>
+                <li>Conteneurisation des applications avec Docker, réduisant les délais de mise en production.</li>
+                <li>Conception et déploiement d'infrastructures cloud résilientes via AWS CloudFormation et CDK, assurant une gestion robuste des services.</li>
+                <li>Développement de scripts Shell pour automatiser la gestion des logs et améliorer la surveillance des performances.</li>
+                <li>Gestion centralisée des artefacts avec AWS CodeArtifact, réduisant les erreurs liées aux versions et facilitant la gestion des dépendances.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Ingénieur DevOps - Focus International, Tunis, Tunisie (Janvier 2019 – Juin 2023)</h3>
+            <p><strong>Contexte et Objectifs</strong>: Mise en place complète de l'infrastructure DevOps pour le département web de Focus International.</p>
+            <p><strong>Réalisations Clés</strong>:</p>
+            <ul>
+                <li>Automatisation des processus de déploiement et des tests, augmentant significativement l'efficacité des cycles de développement.</li>
+                <li>Mise en place de stratégies de déploiement automatisé et d'intégration continue via Kubernetes et GitOps.</li>
+                <li>Gestion des pipelines CI/CD pour quatre environnements distincts avec Jenkins, garantissant des déploiements sécurisés et une intégration fluide.</li>
+                <li>Orchestration et gestion des clusters Docker Swarm et Kubernetes avec Ansible, garantissant la scalabilité et la haute disponibilité des services.</li>
+                <li>Déploiement d'applications multi-environnements utilisant Kubernetes, Docker Swarm, et Docker Compose, assurant une gestion flexible des projets.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Ingénieur DevOps - Linedata, Tunis, Tunisie (Février 2018 – Décembre 2019)</h3>
+            <p><strong>Contexte et Objectifs</strong>: Mise en place complète de l'infrastructure DevOps depuis zéro, avec pour objectif principal d'automatiser les processus de déploiement et de tests.</p>
+            <p><strong>Réalisations Clés</strong>:</p>
+            <ul>
+                <li>Automatisation des processus de déploiement et de tests, incluant la qualité, la performance, et les tests unitaires.</li>
+                <li>Conteneurisation des systèmes avec Docker, augmentant la disponibilité et la portabilité des applications.</li>
+                <li>Surveillance en temps réel des applications avec Prometheus et Grafana, garantissant la détection rapide des anomalies.</li>
+                <li>Analyse des logs avec la EFK Stack, améliorant la traçabilité des erreurs et accélérant la résolution des incidents.</li>
+            </ul>
+        </article>
     </section>
     <hr>
 
     <section id="portfolio" class="animate__animated animate__fadeInUp">
         <h2>Portfolio</h2>
         <div class="portfolio-item">
-            <img src="images/project1.jpg" alt="Project 1">
+            <img src="/assets/images/project1.jpg" alt="Project 1">
             <h3>Project 1 Title</h3>
             <p>Short description of the project. <a href="projects/project1.html">Learn more...</a></p>
         </div>
-        <!-- Add more portfolio items similarly -->
+        <div class="portfolio-item">
+            <img src="/assets/images/project2.jpg" alt="Project 2">
+            <h3>Project 2 Title</h3>
+            <p>Short description of the project. <a href="projects/project2.html">Learn more...</a></p>
+        </div>
     </section>
     <hr>
 
