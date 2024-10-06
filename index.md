@@ -4,18 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohamed Ali Ghouma - DevOps Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            background-color: #f5f5f5;
-            color: #333;
             margin: 0;
             padding: 0;
+            overflow: hidden;
+            background: #f39c12;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
         }
+
+        .hero-content {
+            z-index: 10;
+        }
+
+        .hero-content img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 2rem;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+        }
+
+        #background-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('assets/images/background-pattern.svg');
+            z-index: 1;
+            opacity: 0.5;
+        }
+
         header {
             position: fixed;
             top: 0;
@@ -50,209 +106,42 @@
         nav ul a:hover {
             color: #00bcd4;
         }
-        .hero {
-            height: 100vh;
-            background: url('/assets/images/hero-bg.jpg') no-repeat center center/cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            color: #fff;
-        }
-        .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-        }
-        .hero p {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-        }
-        .social-icons a {
-            margin: 0 15px;
-            color: #fff;
-            font-size: 2rem;
-            transition: color 0.3s;
-        }
-        .social-icons a:hover {
-            color: #00bcd4;
-        }
-        section {
+        .skills, .portfolio, #contact-form, footer {
             padding: 80px 20px;
             max-width: 1200px;
             margin: 0 auto;
-        }
-        section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: #00bcd4;
-            text-align: center;
-        }
-        .skills {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-            text-align: center;
-        }
-        .skill-card {
             background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .skill-card:hover {
-            transform: translateY(-10px);
-        }
-        .skill-card i {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            color: #00bcd4;
-        }
-        .timeline {
-            position: relative;
-            padding: 20px 0;
-            list-style: none;
-        }
-        .timeline:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 4px;
-            height: 100%;
-            background: #00bcd4;
-        }
-        .timeline-item {
-            margin: 20px 0;
-            padding-left: 50%;
-            position: relative;
-        }
-        .timeline-item:before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            top: 20px;
-            transform: translateX(-50%);
-            width: 20px;
-            height: 20px;
-            background: #00bcd4;
-            border-radius: 50%;
-        }
-        .timeline-content {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            position: relative;
-            max-width: 450px;
-            text-align: left;
-        }
-        .timeline-content h3 {
-            font-size: 1.6rem;
-            font-weight: bold;
-            color: #333;
-        }
-        .timeline-content h4 {
-            margin-top: 10px;
-            font-size: 1rem;
-            color: #777;
-        }
-        .portfolio {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .portfolio-item {
-            background: #fff;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.3s;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .portfolio-item:hover {
-            transform: translateY(-10px);
-        }
-        .portfolio-item img {
-            width: 100%;
-            display: block;
-        }
-        .portfolio-item h3 {
-            padding: 10px;
-            color: #333;
-        }
-        #contact-form {
-            display: flex;
-            flex-direction: column;
-            max-width: 600px;
-            margin: 0 auto;
-            gap: 15px;
-        }
-        #contact-form input, #contact-form textarea {
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            background: #fff;
-            color: #333;
-        }
-        #contact-form button {
-            padding: 15px;
-            border: none;
-            background: #00bcd4;
-            color: #fff;
-            cursor: pointer;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-        #contact-form button:hover {
-            background: #00a3c4;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #fff;
-            color: #333;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .footer-icons a {
-            margin: 0 10px;
-            color: #333;
-            transition: color 0.3s;
-        }
-        .footer-icons a:hover {
-            color: #00bcd4;
         }
     </style>
 </head>
 <body>
+    <div id="background-animation"></div>
+    <div class="hero-content">
+        <img src="assets/images/profile-picture.jpg" alt="Mohamed Ali Ghouma">
+        <h1>Mohamed Ali Ghouma</h1>
+        <h2>DevOps Engineer & Cloud Enthusiast</h2>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/mohamed-alighouma" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/mohamedalighouma" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="/assets/images/logo.png" alt="Logo">
+                <img src="assets/images/logo.png" alt="Logo of Mohamed Ali Ghouma">
             </div>
             <nav>
                 <ul>
                     <li><a href="#about">À propos</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#skills">Atouts</a></li>
+                    <li><a href="#experience">Expériences</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <div class="hero">
-        <h1>Mohamed Ali Ghouma</h1>
-        <p>Senior DevOps Cloud SRE Engineer</p>
-        <div class="social-icons">
-            <a href="https://github.com/mohamedalighouma"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/mohamed-alighouma"><i class="fab fa-linkedin"></i></a>
-        </div>
-    </div>
 
     <section id="about">
         <h2>À propos de moi</h2>
@@ -278,33 +167,6 @@
                 <p>Proactive and reactive skills in managing production incidents and maintaining continuity.</p>
             </div>
         </div>
-    </section>
-
-    <section id="experience">
-        <h2>Expérience</h2>
-        <ul class="timeline">
-            <li class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Ingénieur DevOps</h3>
-                    <h4>Capgemini, Juillet 2023 - Juillet 2024</h4>
-                    <p>Amélioration de l'infrastructure DevOps existante, conteneurisation avec Docker, développement de scripts Shell, et conception de cloud infrastructure résiliente via AWS.</p>
-                </div>
-            </li>
-            <li class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Ingénieur DevOps</h3>
-                    <h4>Focus International, Janvier 2019 - Juin 2023</h4>
-                    <p>Mise en place de l'infrastructure DevOps complète pour le département web, orchestration avec Kubernetes, et intégration continue avec Jenkins.</p>
-                </div>
-            </li>
-            <li class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Ingénieur DevOps</h3>
-                    <h4>Linedata, Février 2018 - Décembre 2019</h4>
-                    <p>Responsable de l'automatisation des processus de déploiement, conteneurisation des systèmes avec Docker, et surveillance proactive des systèmes avec Grafana.</p>
-                </div>
-            </li>
-        </ul>
     </section>
 
     <section id="portfolio">
