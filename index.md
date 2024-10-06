@@ -7,6 +7,83 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+        .logo img {
+            width: 50px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin-left: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #00bcd4;
+        }
+        section {
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 1000px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+        .social-media a {
+            margin: 0 10px;
+            color: #fff;
+            transition: color 0.3s;
+        }
+        .social-media a:hover {
+            color: #00bcd4;
+        }
+        #contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #contact p {
+            margin: 5px 0;
+        }
+        #contact a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #contact a:hover {
+            color: #00bcd4;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -121,9 +198,11 @@
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Feel free to reach out for collaborations or just a friendly chat.</p>
-        <p>Email: <a href="mailto:ghouma.mohamed.ali@gmail.com">ghouma.mohamed.ali@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-alighouma">Mohamed Ali Ghouma</a></p>
+        <div>
+            <p>Feel free to reach out for collaborations or just a friendly chat.</p>
+            <p>Email: <a href="mailto:ghouma.mohamed.ali@gmail.com">ghouma.mohamed.ali@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-alighouma">Mohamed Ali Ghouma</a></p>
+        </div>
     </section>
 
     <footer>
