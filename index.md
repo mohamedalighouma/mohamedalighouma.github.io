@@ -1,90 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohamed Ali Ghouma - DevOps Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             line-height: 1.6;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
         }
+
         header {
-            position: sticky;
+            position: fixed;
             top: 0;
+            width: 100%;
             background-color: #333;
             color: #fff;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 20px;
+            padding: 20px;
             z-index: 1000;
         }
+
         .logo img {
             width: 50px;
         }
-        .nav-links {
+
+        nav ul {
             list-style: none;
             display: flex;
         }
-        .nav-links li {
+
+        nav ul li {
             margin-left: 20px;
         }
-        .nav-links a {
+
+        nav ul a {
             text-decoration: none;
             color: #fff;
             transition: color 0.3s;
         }
-        .nav-links a:hover {
+
+        nav ul a:hover {
             color: #00bcd4;
         }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: url('/assets/images/hero-bg.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .hero .social-icons a {
+            margin: 0 15px;
+            font-size: 1.5rem;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        .hero .social-icons a:hover {
+            color: #00bcd4;
+        }
+
+        /* Section Styles */
         section {
-            margin: 40px auto;
-            padding: 20px;
-            max-width: 1000px;
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
         }
+
+        /* Skill Cards */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skill-card {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .skill-card h3 {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
             padding: 20px;
             background-color: #333;
             color: #fff;
-            margin-top: 40px;
         }
+
         .social-media a {
             margin: 0 10px;
             color: #fff;
+            font-size: 1.5rem;
             transition: color 0.3s;
         }
+
         .social-media a:hover {
-            color: #00bcd4;
-        }
-        #contact {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        #contact p {
-            margin: 5px 0;
-        }
-        #contact a {
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        #contact a:hover {
             color: #00bcd4;
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="logo animate__animated animate__bounceIn">
@@ -93,116 +169,71 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="#about">À propos</a></li>
-                <li><a href="#highlights">Atouts</a></li>
-                <li><a href="#professional-experience">Expériences</a></li>
+                <li><a href="#skills">Compétences</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <div class="hero">
+        <div>
+            <h1>Mohamed Ali Ghouma</h1>
+            <p>Senior DevOps Cloud SRE Engineer</p>
+            <div class="social-icons">
+                <a href="https://github.com/mohamedalighouma"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mohamed-alighouma"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
     <section id="about">
-        <h1>Mohamed Ali Ghouma</h1>
-        <p><strong>Senior DevOps Cloud SRE Engineer</strong></p>
-        <p>Phone: +33 0758151884</p>
-        <p>Email: <a href="mailto:ghouma.mohamed.ali@gmail.com">ghouma.mohamed.ali@gmail.com</a></p>
+        <h2>À propos de moi</h2>
+        <p>Ingénieur DevOps expert en automatisation, orchestration des conteneurs et intégration continue. Passionné par l'optimisation des processus de déploiement pour assurer des livraisons continues fluides et une disponibilité optimale des applications.</p>
     </section>
-    <hr>
 
-    <section id="languages">
-        <h2>Langues</h2>
-        <ul>
-            <li><strong>Français</strong>: Bilingue</li>
-            <li><strong>Anglais</strong>: Bilingue</li>
-        </ul>
+    <section id="skills">
+        <h2>Compétences</h2>
+        <div class="skills">
+            <div class="skill-card">
+                <i class="fas fa-cogs fa-3x"></i>
+                <h3>Automatisation Cloud</h3>
+                <p>Expert dans l'automatisation des infrastructures complexes en utilisant Kubernetes, Docker, et Ansible.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-sync-alt fa-3x"></i>
+                <h3>CI/CD Pipelines</h3>
+                <p>Maîtrise de Jenkins, GitLab CI, et ArgoCD pour garantir une intégration et des déploiements continus.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-tools fa-3x"></i>
+                <h3>Gestion des Incidents</h3>
+                <p>Proactif et réactif dans la gestion des incidents pour assurer la continuité des services essentiels.</p>
+            </div>
+        </div>
     </section>
-    <hr>
 
-    <section id="highlights" class="animate__animated animate__fadeInLeft">
-        <h2>Atouts</h2>
-        <ul>
-            <li><strong>Maîtrise de l'Automatisation et de l'Orchestration Cloud</strong>: Expert dans l’automatisation d’infrastructures complexes, utilisant Kubernetes, Docker, GitOps, et Ansible pour garantir l'efficacité, la scalabilité et la haute disponibilité des environnements cloud.</li>
-            <li><strong>Optimisation et Fiabilité des Pipelines CI/CD</strong>: Spécialiste dans la mise en place, l’optimisation, et la gestion des pipelines CI/CD avec Jenkins, GitLab CI, et ArgoCD, garantissant une intégration continue fluide et des déploiements rapides.</li>
-            <li><strong>Résolution de Problèmes Complexes</strong>: Capacité à analyser et résoudre des problèmes techniques complexes de manière efficace et rapide, en utilisant des outils et des méthodes adaptés au métier d'Ingénieur DevOps.</li>
-            <li><strong>Réactivité et Gestion des Incidents en Production</strong>: Capacité éprouvée à intervenir rapidement lors d’incidents critiques, tout en assurant la continuité des services essentiels avec une approche méthodique et proactive.</li>
-        </ul>
-    </section>
-    <hr>
-
-    <section id="professional-experience" class="animate__animated animate__fadeInRight">
-        <h2>Expériences Professionnelles</h2>
-        <article>
-            <h3>Ingénieur DevOps - Capgemini, Bordeaux, France (Juillet 2023 – Juillet 2024)</h3>
-            <p><strong>Contexte et Objectifs</strong>: Optimisation de l’infrastructure DevOps pour Air France afin d’améliorer les processus de développement et de déploiement dans un environnement AWS.</p>
-            <p><strong>Réalisations Clés</strong>:</p>
-            <ul>
-                <li>Automatisation complète des pipelines CI/CD avec AWS CodePipeline et Jenkins, accélérant les cycles de livraison.</li>
-                <li>Conteneurisation des applications avec Docker, réduisant les délais de mise en production.</li>
-                <li>Conception et déploiement d'infrastructures cloud résilientes via AWS CloudFormation et CDK, assurant une gestion robuste des services.</li>
-                <li>Développement de scripts Shell pour automatiser la gestion des logs et améliorer la surveillance des performances.</li>
-                <li>Gestion centralisée des artefacts avec AWS CodeArtifact, réduisant les erreurs liées aux versions et facilitant la gestion des dépendances.</li>
-            </ul>
-        </article>
-
-        <article>
-            <h3>Ingénieur DevOps - Focus International, Tunis, Tunisie (Janvier 2019 – Juin 2023)</h3>
-            <p><strong>Contexte et Objectifs</strong>: Mise en place complète de l'infrastructure DevOps pour le département web de Focus International.</p>
-            <p><strong>Réalisations Clés</strong>:</p>
-            <ul>
-                <li>Automatisation des processus de déploiement et des tests, augmentant significativement l'efficacité des cycles de développement.</li>
-                <li>Mise en place de stratégies de déploiement automatisé et d'intégration continue via Kubernetes et GitOps.</li>
-                <li>Gestion des pipelines CI/CD pour quatre environnements distincts avec Jenkins, garantissant des déploiements sécurisés et une intégration fluide.</li>
-                <li>Orchestration et gestion des clusters Docker Swarm et Kubernetes avec Ansible, garantissant la scalabilité et la haute disponibilité des services.</li>
-                <li>Déploiement d'applications multi-environnements utilisant Kubernetes, Docker Swarm, et Docker Compose, assurant une gestion flexible des projets.</li>
-            </ul>
-        </article>
-
-        <article>
-            <h3>Ingénieur DevOps - Linedata, Tunis, Tunisie (Février 2018 – Décembre 2019)</h3>
-            <p><strong>Contexte et Objectifs</strong>: Mise en place complète de l'infrastructure DevOps depuis zéro, avec pour objectif principal d'automatiser les processus de déploiement et de tests.</p>
-            <p><strong>Réalisations Clés</strong>:</p>
-            <ul>
-                <li>Automatisation des processus de déploiement et de tests, incluant la qualité, la performance, et les tests unitaires.</li>
-                <li>Conteneurisation des systèmes avec Docker, augmentant la disponibilité et la portabilité des applications.</li>
-                <li>Surveillance en temps réel des applications avec Prometheus et Grafana, garantissant la détection rapide des anomalies.</li>
-                <li>Analyse des logs avec la EFK Stack, améliorant la traçabilité des erreurs et accélérant la résolution des incidents.</li>
-            </ul>
-        </article>
-    </section>
-    <hr>
-
-    <section id="portfolio" class="animate__animated animate__fadeInUp">
+    <section id="portfolio">
         <h2>Portfolio</h2>
-        <div class="portfolio-item">
-            <img src="/assets/images/project1.jpg" alt="Project 1">
-            <h3>Project 1 Title</h3>
-            <p>Short description of the project. <a href="projects/project1.html">Learn more...</a></p>
-        </div>
-        <div class="portfolio-item">
-            <img src="/assets/images/project2.jpg" alt="Project 2">
-            <h3>Project 2 Title</h3>
-            <p>Short description of the project. <a href="projects/project2.html">Learn more...</a></p>
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <img src="/assets/images/project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Short description of the project. <a href="projects/project1.html">Learn more...</a></p>
+            </div>
+            <div class="portfolio-item">
+                <img src="/assets/images/project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Short description of the project. <a href="projects/project2.html">Learn more...</a></p>
+            </div>
         </div>
     </section>
-    <hr>
-
-    <section id="education">
-        <h2>Diplômes et Formations</h2>
-        <ul>
-            <li><strong>Diplôme d'Ingénieur en Informatique</strong> - École Nationale d'Ingénieurs de Carthage, Tunisie (Septembre 2014 – Juin 2017)</li>
-            <li><strong>Cycle Préparatoire en Sciences d’Ingénieur</strong> - Institut Préparatoire aux Études d'Ingénieurs de Nabeul, Tunisie (Septembre 2012 – Juin 2014)</li>
-            <li><strong>Baccalauréat en Sciences Expérimentales</strong> - Lycée Technique de Zarzis, Tunisie (2008 – 2012)</li>
-        </ul>
-    </section>
-    <hr>
 
     <section id="contact">
         <h2>Contact</h2>
-        <div>
-            <p>Feel free to reach out for collaborations or just a friendly chat.</p>
-            <p>Email: <a href="mailto:ghouma.mohamed.ali@gmail.com">ghouma.mohamed.ali@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-alighouma">Mohamed Ali Ghouma</a></p>
-        </div>
+        <p>Feel free to reach out for collaborations or just a friendly chat.</p>
+        <p>Email: <a href="mailto:ghouma.mohamed.ali@gmail.com">ghouma.mohamed.ali@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-alighouma">Mohamed Ali Ghouma</a></p>
     </section>
 
     <footer>
@@ -212,7 +243,6 @@
         </div>
         <p>&copy; 2024 Mohamed Ali Ghouma. All rights reserved.</p>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
+
 </html>
