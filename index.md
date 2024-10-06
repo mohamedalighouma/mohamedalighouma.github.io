@@ -30,10 +30,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Network_Animation_Example.gif/800px-Network_Animation_Example.gif') no-repeat center;
+            background: url('https://media.giphy.com/media/l0HlNQ03J5JxX6lva/giphy.gif') no-repeat center;
             background-size: cover;
             z-index: 0;
-            opacity: 0.5;
+            opacity: 0.3;
         }
 
         .content {
