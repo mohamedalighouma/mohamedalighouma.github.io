@@ -103,7 +103,26 @@
             transform: translateY(-3px);
         }
 
-    </style>
+            .button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 25px;
+            background-color: #ffffff;
+            color: #f39c12;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .button:hover {
+            background-color: #f39c12;
+            color: #ffffff;
+            transform: translateY(-3px);
+        }
+</style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
@@ -111,12 +130,18 @@
     <div class="header">
         <div class="background-animation" id="background-animation"></div>
         <div class="content">
+            <img src="photos/logo.png" alt="Logo" class="logo" style="width: 100px; margin-bottom: 20px;">
             <img src="photos/photo.jpg" alt="Avatar" class="avatar">
             <h1>Mohamed Ali Ghouma</h1>
             <p>DevOps Engineer & Cloud Enthusiast</p>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/mohamed-ali-g/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/mohamedalighouma" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mohamed-ali-g/" target="_blank" class="button"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/mohamedalighouma" target="_blank" class="button"><i class="fab fa-github"></i> GitHub</a>
+                <a href="mailto:ghouma.mohamed.ali@gmail.com" class="button"><i class="fas fa-envelope"></i> Email Me</a>
+                <a href="https://www.upwork.com/freelancers/~01c6b5a3a3a4d4e6da" target="_blank" class="button"><i class="fab fa-upwork"></i> Upwork Profile</a>
+                <a href="https://www.credly.com/users/mohamed-ali-ghouma/edit" target="_blank" class="button"><i class="fas fa-certificate"></i> Credly Profile</a>
+                <a href="https://medium.com/@ghouma.mohamed.ali" target="_blank" class="button"><i class="fab fa-medium"></i> Medium Page</a>
+                <a href="https://wa.me/33758151884" target="_blank" class="button"><i class="fab fa-whatsapp"></i> WhatsApp Me</a>
             </div>
             <div class="buttons">
                 <a href="documents/CV" download class="button">Download CV</a>
