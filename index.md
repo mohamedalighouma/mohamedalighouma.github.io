@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header Section</title>
+    <link rel="icon" type="image/png" href="photos/logo.png">
     <style>
         body {
             margin: 0;
@@ -111,7 +112,7 @@
     <div class="header">
         <div class="background-animation" id="background-animation"></div>
         <div class="content">
-            <img src="photos/logo.png" alt="Logo" class="logo" style="width: 100px; margin-bottom: 20px;">
+            
             <img src="photos/photo.jpg" alt="Avatar" class="avatar">
             <h1>Mohamed Ali Ghouma</h1>
             <p>DevOps Engineer & Cloud Enthusiast</p>
