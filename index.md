@@ -4,113 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header Section</title>
-    
-    <style>
-        body {$1 overflow: auto;$2}
-
-        .header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            text-align: center;
-            position: relative;
-        }
-
-        .background-animation {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-            opacity: 0.3;
-        }
-
-        .content {
-            position: relative;
-            z-index: 1;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
-        }
-
-        .avatar {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid #ffffff;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-        }
-
-        h1 {
-            margin-top: 20px;
-            font-size: 3rem;
-            font-family: 'Brush Script MT', cursive;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-        }
-
-        p {
-            font-size: 1.4rem;
-            margin-bottom: 20px;
-            font-weight: 300;
-        }
-
-        .social-icons {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        .social-icons a {
-            color: white;
-            text-decoration: none;
-            font-size: 2.5rem;
-            transition: transform 0.3s;
-        }
-
-        .social-icons a:hover {
-            transform: scale(1.2);
-        }
-
-        .buttons {
-            margin-top: 20px;
-            display: flex;
-            gap: 15px;
-        }
-
-        .button {
-            padding: 12px 25px;
-            background-color: #ffffff;
-            color: #f39c12;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 30px;
-            transition: background-color 0.3s, color 0.3s, transform 0.3s;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        .button:hover {
-            background-color: #f39c12;
-            color: #ffffff;
-            transform: translateY(-3px);
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body style="position: relative; overflow-y: auto;">
+<body>
     <div class="header">
-        <div class="background-animation" id="background-animation" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div></div>
+        <div class="background-animation" id="background-animation"></div>
         <div class="content">
-            
-            
             <img src="photos/photo.jpg" alt="Avatar" class="avatar">
             <h1>Mohamed Ali Ghouma</h1>
             <p>DevOps Engineer & Cloud Enthusiast</p>
-            
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/mohamed-ali-g/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/mohamedalighouma" target="_blank"><i class="fab fa-github"></i></a>
@@ -120,21 +24,20 @@
                 <a href="https://medium.com/@ghouma.mohamed.ali" target="_blank"><i class="fab fa-medium"></i></a>
                 <a href="https://wa.me/33758151884" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <div class="buttons" style="justify-content: center;">
+            <div class="buttons">
                 <a href="documents/CV" download class="button">Download CV</a>
             </div>
+        </div>
     </div>
 
-    
-
-    
     <script>
         const canvas = document.createElement('canvas');
         document.getElementById('background-animation').appendChild(canvas);
         const ctx = canvas.getContext('2d');
 
-        canvas.width = document.body.clientWidth;
-        canvas.height = document.body.clientHeight;
+        // Set initial canvas size
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
 
         let particles = [];
 
@@ -180,6 +83,7 @@
         createParticles();
         animate();
 
+        // Adjust canvas size on window resize
         window.addEventListener('resize', () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
