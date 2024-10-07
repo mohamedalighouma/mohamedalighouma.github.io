@@ -112,14 +112,12 @@
     <div class="header">
         <div class="background-animation" id="background-animation"></div>
         <div class="content">
+            <img src="photos/logo.png" alt="Logo" class="logo" style="width: 100px; margin-bottom: 20px;">
             
             <img src="photos/photo.jpg" alt="Avatar" class="avatar">
             <h1>Mohamed Ali Ghouma</h1>
             <p>DevOps Engineer & Cloud Enthusiast</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/mohamed-ali-g/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/mohamedalighouma" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
+            
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/mohamed-ali-g/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/mohamedalighouma" target="_blank"><i class="fab fa-github"></i></a>
@@ -129,13 +127,10 @@
                 <a href="https://medium.com/@ghouma.mohamed.ali" target="_blank"><i class="fab fa-medium"></i></a>
                 <a href="https://wa.me/33758151884" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <div class="buttons">
+            <div class="buttons" style="justify-content: center;">
                 <a href="documents/CV" download class="button">Download CV</a>
             </div>
-            <div class="buttons">
-                <a href="https://medium.com/@ghouma.mohamed.ali" target="_blank" class="button">Medium Page</a>
-                <a href="https://wa.me/33758151884" target="_blank" class="button">WhatsApp Me</a>
-            </div>
+            
         </div>
     </div>
 
