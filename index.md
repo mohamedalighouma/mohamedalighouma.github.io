@@ -103,7 +103,7 @@
 </head>
 <body style="position: relative; overflow-y: auto;">
     <div class="header">
-        <div class="background-animation" id="background-animation" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div></div>
+        <div class="background-animation" id="background-animation" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div></div>
         <div class="content">
             
             
@@ -168,8 +168,8 @@
         document.getElementById('background-animation').appendChild(canvas);
         const ctx = canvas.getContext('2d');
 
-        canvas.width = document.querySelector('.header').clientWidth;
-        canvas.height = document.querySelector('.header').clientHeight;
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
 
         let particles = [];
 
