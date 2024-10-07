@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header Section</title>
-    <link rel="stylesheet" href="styles.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
 </head>
-<body>
+<body style="position: relative; overflow-y: auto;">
     <div class="header">
         <div class="background-animation" id="background-animation"></div>
         <div class="content">
@@ -35,7 +36,6 @@
         document.getElementById('background-animation').appendChild(canvas);
         const ctx = canvas.getContext('2d');
 
-        // Set initial canvas size
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
 
@@ -83,7 +83,6 @@
         createParticles();
         animate();
 
-        // Adjust canvas size on window resize
         window.addEventListener('resize', () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
