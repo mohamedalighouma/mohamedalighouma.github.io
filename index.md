@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header Section</title>
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="position: relative; overflow-y: auto;">
+<body>
     <div class="header">
         <div class="background-animation" id="background-animation"></div>
         <div class="content">
             <img src="photos/photo.jpg" alt="Avatar" class="avatar">
             <h1>Mohamed Ali Ghouma</h1>
             <p>DevOps Engineer & Cloud Enthusiast</p>
+            
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/mohamed-ali-g/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/mohamedalighouma" target="_blank"><i class="fab fa-github"></i></a>
