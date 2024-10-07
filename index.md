@@ -133,8 +133,8 @@
         document.getElementById('background-animation').appendChild(canvas);
         const ctx = canvas.getContext('2d');
 
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+        canvas.width = document.body.clientWidth;
+        canvas.height = document.body.clientHeight;
 
         let particles = [];
 
@@ -157,13 +157,13 @@
         Particle.prototype.draw = function() {
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-            ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
             ctx.fill();
         };
 
         function createParticles() {
             particles = [];
-            for (let i = 0; i < 100; i++) {
+            for (let i = 0; i < 150; i++) {
                 particles.push(new Particle(Math.random() * canvas.width, Math.random() * canvas.height));
             }
         }
