@@ -125,16 +125,21 @@
             </div>
     </div>
 
-    <section id="about" style="position: relative; z-index: 1;" style="background: #fff; color: #333; padding: 50px 20px;">
-        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <h2>About Me</h2>
-            <p>Hello There! My name is Mohamed Ali Ghouma, a DevOps engineer with expertise in automation, cloud orchestration, and continuous integration. Passionate about optimizing deployment processes, I strive to automate and ensure the reliability of systems to guarantee smooth continuous delivery and optimal availability of applications. My goal is to support businesses in their digital transformation by providing efficient technical solutions.</p>
-            <div style="display: flex; justify-content: space-around; max-width: 600px; margin: 30px auto;">
-                <div style="text-align: left;">
-                    <p><strong>Full Name:</strong> Mohamed Ali Ghouma</p>
-                    <p><strong>Email:</strong> <a href="mailto:ghouma.mohamed.ali@gmail.com">ghouma.mohamed.ali@gmail.com</a></p>
-                    <p><strong>Website:</strong> <a href="https://mohamedalighouma.github.io/">https://mohamedalighouma.github.io/</a></p>
-                    <p><strong>Location:</strong> Bordeaux, France</p>
+    <section id="about" style="background: #fff; color: #333; padding: 50px 20px;">
+        <div style="max-width: 800px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+            <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+                <h2>About Me</h2>
+                <p><strong>Full Name:</strong> Mohamed Ali Ghouma</p>
+                <p><strong>Email:</strong> <a href="mailto:ghouma.mohamed.ali@gmail.com">ghouma.mohamed.ali@gmail.com</a></p>
+                <p><strong>Website:</strong> <a href="https://mohamedalighouma.github.io/">https://mohamedalighouma.github.io/</a></p>
+                <p><strong>Location:</strong> Bordeaux, France</p>
+            </div>
+            <div style="flex: 2; min-width: 250px; margin-bottom: 20px;">
+                <h2>Hello There!</h2>
+                <p>My name is Mohamed Ali Ghouma, a DevOps engineer with expertise in automation, cloud orchestration, and continuous integration. Passionate about optimizing deployment processes, I strive to automate and ensure the reliability of systems to guarantee smooth continuous delivery and optimal availability of applications. My goal is to support businesses in their digital transformation by providing efficient technical solutions.</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mohamed-ali-g/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/mohamedalighouma" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
