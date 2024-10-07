@@ -101,9 +101,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body style="position: relative;">
+<body style="position: relative; overflow-y: auto;">
     <div class="header">
-        <div class="background-animation" id="background-animation" style="height: 100vh; overflow: hidden;"></div>
+        <div class="background-animation" id="background-animation" style="height: 100vh; overflow: hidden; position: fixed; top: 0; width: 100%; z-index: 0;"></div>
         <div class="content">
             
             
