@@ -108,9 +108,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="position: relative;">
     <div class="header">
-        <div class="background-animation" id="background-animation"></div>
+        <div class="background-animation" id="background-animation" style="height: 100vh; overflow: hidden;"></div>
         <div class="content">
             
             
@@ -132,7 +132,7 @@
             </div>
     </div>
 
-    <section id="about" style="background: #fff; color: #333; padding: 50px 20px;">
+    <section id="about" style="position: relative; z-index: 1;" style="background: #fff; color: #333; padding: 50px 20px;">
         <div style="max-width: 800px; margin: 0 auto; text-align: center;">
             <h2>About Me</h2>
             <p>Hello There! My name is Mohamed Ali Ghouma, a DevOps engineer with expertise in automation, cloud orchestration, and continuous integration. Passionate about optimizing deployment processes, I strive to automate and ensure the reliability of systems to guarantee smooth continuous delivery and optimal availability of applications. My goal is to support businesses in their digital transformation by providing efficient technical solutions.</p>
@@ -147,7 +147,7 @@
         </div>
     </section>
 
-    <section id="resume" style="background: #f7f7f7; padding: 50px 20px;">
+    <section id="resume" style="position: relative; z-index: 1;" style="background: #f7f7f7; padding: 50px 20px;">
         <div style="max-width: 800px; margin: 0 auto;">
             <h2 style="text-align: center;">My Resume</h2>
             <h3>Work Experience</h3>
