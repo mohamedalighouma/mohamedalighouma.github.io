@@ -2,14 +2,14 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.7;
-    background-color: #ffffff;
-    color: #333333;
+    background-color: #34495e;
+    color: #ffffff;
     margin: 0;
     padding: 0;
-    transition: all 0.3s ease-in-out;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
+/* Header Section */
 .header {
     display: flex;
     flex-direction: column;
@@ -17,10 +17,10 @@ body {
     justify-content: center;
     height: 100vh;
     position: relative;
-    background: transparent;
     overflow: hidden;
 }
 
+/* Background Animation */
 .background-animation {
     position: fixed;
     top: 0;
@@ -30,16 +30,18 @@ body {
     z-index: -1;
 }
 
+/* Content Styling */
 .content {
     position: relative;
     z-index: 1;
-    text-align: center;
     padding: 20px;
+    text-align: center;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Avatar Styling */
 .avatar {
     width: 150px;
     height: 150px;
@@ -48,6 +50,7 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
+/* Headings */
 h1 {
     margin-top: 20px;
     font-size: 3rem;
@@ -63,6 +66,7 @@ p {
     color: #ffffff;
 }
 
+/* Social Icons */
 .social-icons {
     display: flex;
     gap: 20px;
@@ -71,56 +75,37 @@ p {
 
 .social-icons a {
     color: #ffffff;
+    font-size: 2rem;
     text-decoration: none;
-    font-size: 2.5rem;
     transition: transform 0.3s;
 }
 
 .social-icons a:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
+/* Buttons */
 .buttons {
     margin-top: 20px;
     display: flex;
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
 }
 
 .button {
     padding: 12px 25px;
     background-color: #ffffff;
-    color: #f39c12;
+    color: #34495e;
     text-decoration: none;
     font-weight: bold;
     border-radius: 30px;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .button:hover {
-    background-color: #f39c12;
+    background-color: #34495e;
     color: #ffffff;
     transform: translateY(-3px);
 }
 
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #fafafa;
-    color: #777;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.05);
-}
-
-.footer-icons a {
-    margin: 0 10px;
-    color: #777;
-    font-size: 1.5rem;
-    transition: color 0.3s, transform 0.3s;
-}
-
-.footer-icons a:hover {
-    color: #0097a7;
-    transform: scale(1.2);
-}
