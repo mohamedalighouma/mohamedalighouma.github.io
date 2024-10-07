@@ -6,21 +6,14 @@
     <title>Header Section</title>
     
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: #f39c12;
-            color: white;
-            overflow: hidden;
-        }
+        body {$1 overflow: auto;$2}
 
         .header {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            height: 100%;
             text-align: center;
             position: relative;
         }
