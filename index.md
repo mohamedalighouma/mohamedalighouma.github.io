@@ -120,11 +120,17 @@
                 <a href="https://www.linkedin.com/in/mohamed-ali-g/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/mohamedalighouma" target="_blank"><i class="fab fa-github"></i></a>
             </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mohamed-ali-g/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/mohamedalighouma" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:ghouma.mohamed.ali@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.upwork.com/freelancers/~01c6b5a3a3a4d4e6da" target="_blank"><i class="fab fa-upwork"></i></a>
+                <a href="https://www.credly.com/users/mohamed-ali-ghouma/edit" target="_blank"><i class="fas fa-certificate"></i></a>
+                <a href="https://medium.com/@ghouma.mohamed.ali" target="_blank"><i class="fab fa-medium"></i></a>
+                <a href="https://wa.me/33758151884" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
             <div class="buttons">
                 <a href="documents/CV" download class="button">Download CV</a>
-                <a href="mailto:ghouma.mohamed.ali@gmail.com" class="button">Email Me</a>
-                <a href="https://www.upwork.com/freelancers/~01c6b5a3a3a4d4e6da" target="_blank" class="button">Upwork Profile</a>
-                <a href="https://www.credly.com/users/mohamed-ali-ghouma/edit" target="_blank" class="button">Credly Profile</a>
             </div>
             <div class="buttons">
                 <a href="https://medium.com/@ghouma.mohamed.ali" target="_blank" class="button">Medium Page</a>
