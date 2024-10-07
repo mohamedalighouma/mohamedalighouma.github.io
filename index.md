@@ -130,10 +130,41 @@
             <div class="buttons" style="justify-content: center;">
                 <a href="documents/CV" download class="button">Download CV</a>
             </div>
-            
-        </div>
     </div>
 
+    <section id="about" style="background: #fff; color: #333; padding: 50px 20px;">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h2>About Me</h2>
+            <p>Hello There! My name is Mohamed Ali Ghouma, a DevOps engineer with expertise in automation, cloud orchestration, and continuous integration. Passionate about optimizing deployment processes, I strive to automate and ensure the reliability of systems to guarantee smooth continuous delivery and optimal availability of applications. My goal is to support businesses in their digital transformation by providing efficient technical solutions.</p>
+            <div style="display: flex; justify-content: space-around; max-width: 600px; margin: 30px auto;">
+                <div style="text-align: left;">
+                    <p><strong>Full Name:</strong> Mohamed Ali Ghouma</p>
+                    <p><strong>Email:</strong> <a href="mailto:ghouma.mohamed.ali@gmail.com">ghouma.mohamed.ali@gmail.com</a></p>
+                    <p><strong>Website:</strong> <a href="https://mohamedalighouma.github.io/">https://mohamedalighouma.github.io/</a></p>
+                    <p><strong>Location:</strong> Bordeaux, France</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" style="background: #f7f7f7; padding: 50px 20px;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2 style="text-align: center;">My Resume</h2>
+            <h3>Work Experience</h3>
+            <div style="margin-bottom: 20px;">
+                <h4>DevOps Engineer at Capgemini Bordeaux (July 2023 - July 2024)</h4>
+                <p>Worked on optimizing Air France's DevOps infrastructure, with a focus on automation, reducing delivery times, and enhancing system stability in an AWS environment. Key achievements include automation of CI/CD pipelines with AWS CodePipeline and Jenkins, containerization with Docker, and cloud infrastructure design with CloudFormation and AWS CDK.</p>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <h4>DevOps Engineer at Focus International Tunis (January 2019 - June 2023)</h4>
+                <p>Responsible for setting up the complete DevOps infrastructure for the web department, focusing on optimizing development cycles, automating deployment and testing processes, and improving system reliability. Key technologies used include Ansible, Kubernetes, GitOps (ArgoCD), and Jenkins.</p>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <h4>DevOps Engineer at Linedata Tunis (January 2017 - December 2018)</h4>
+                <p>Built the DevOps infrastructure from scratch, with a focus on automation, deployment processes, and reliability improvements. Key technologies include Jenkins, Docker, Kubernetes, and Prometheus.</p>
+            </div>
+        </div>
+    </section>
     <script>
         const canvas = document.createElement('canvas');
         document.getElementById('background-animation').appendChild(canvas);
