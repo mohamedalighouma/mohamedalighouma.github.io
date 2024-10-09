@@ -134,7 +134,36 @@
 		$(".fh5co-loader").fadeOut("slow");
 	};
 
-	
+	// Confetti effect
+	var createConfetti = function() {
+		const confettiContainer = document.createElement('div');
+		confettiContainer.id = 'confetti-container';
+		document.body.appendChild(confettiContainer);
+
+		for (let i = 0; i < 100; i++) {
+			const confetti = document.createElement('div');
+			confetti.classList.add('confetti');
+			confetti.style.left = `${Math.random() * 100}vw`;
+			confetti.style.backgroundColor = getRandomColor();
+			confettiContainer.appendChild(confetti);
+
+			setTimeout(() => {
+				confetti.remove();
+			}, 5000);
+		}
+
+		// Remove the container after 5 seconds
+		setTimeout(() => {
+			confettiContainer.remove();
+		}, 5000);
+	};
+
+	// Random color generator for confetti
+	var getRandomColor = function() {
+		const colors = ['#f94144', '#f3722c', '#f9c74f', '#90be6d', '#43aa8b', '#577590'];
+		return colors[Math.floor(Math.random() * colors.length)];
+	};
+
 	$(function(){
 		contentWayPoint();
 		goToTop();
@@ -143,7 +172,9 @@
 		parallax();
 		// pieChart();
 		skillsWayPoint();
-	});
 
+		// Trigger confetti effect on page load
+		createConfetti();
+	});
 
 }());
